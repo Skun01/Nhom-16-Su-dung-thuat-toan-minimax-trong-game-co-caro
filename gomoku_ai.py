@@ -48,7 +48,6 @@ class GomokuAI:
         score = 0
         # Kiểm tra 4 hướng: ngang, dọc, chéo xuống, chéo lên
         directions = [(0,1), (1,0), (1,1), (1,-1)]
-        
         for dx, dy in directions:
             count = 1  # Số quân liên tiếp
             blocks = 0  # Số đầu bị chặn

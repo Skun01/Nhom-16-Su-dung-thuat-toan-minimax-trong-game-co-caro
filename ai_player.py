@@ -54,7 +54,7 @@ class AIPlayer:
                all(board[i][2-i] == player for i in range(3)):
                 return True
             return False
-
+        
         # Kiểm tra điều kiện dừng
         if check_winner('O'):
             return 1  # Máy thắng

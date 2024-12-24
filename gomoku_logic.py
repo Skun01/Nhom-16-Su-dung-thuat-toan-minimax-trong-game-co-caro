@@ -10,6 +10,14 @@ class GomokuLogic:
         return False
     
     def check_winner(self, player):
+        """
+        Args:
+            player (str): Người chơi cần kiểm tra ('X' hoặc 'O')
+            
+        Returns:
+            bool: True nếu người chơi đã thắng, False nếu chưa
+        """
+        # player là người chơi
         # Kiểm tra hàng ngang
         for i in range(self.size):
             for j in range(self.size - 4):
