@@ -155,7 +155,13 @@ class GameBoard(BaseGameWindow):
         # Lấy nước đi dựa trên độ khó
         if self.difficulty == "Easy":
             move = self.ai.get_easy_move(self.game_logic.board)
-        else:
+        elif self.difficulty == "Trung bình":
+        # 50% cơ hội chọn nước đi dễ hoặc khó
+            if random.random() < 0.3:
+                move = self.ai.get_easy_move(self.game_logic.board)
+            else:
+                move = self.ai.get_best_move(self.game_logic.board)
+        else:  # Khó
             move = self.ai.get_best_move(self.game_logic.board)
             
         if move:
