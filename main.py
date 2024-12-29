@@ -4,6 +4,7 @@ from game_logic import TicTacToeLogic
 from ai_player import AIPlayer
 from gomoku_logic import GomokuLogic
 from gomoku_ai import GomokuAI
+import random
 
 # Lớp cơ bản để tạo cửa sổ giao diện
 class BaseWindow:
